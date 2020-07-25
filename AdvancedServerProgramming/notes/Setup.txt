@@ -1,0 +1,36 @@
+Microsoft Windows [Version 10.0.17763.439]
+(c) 2018 Microsoft Corporation. All rights reserved.
+
+C:\Users\shariqparwez>cd C:\DevTools\postgresql-10.8-1-windows-x64-binaries\pgsql\bin
+
+C:\DevTools\postgresql-10.8-1-windows-x64-binaries\pgsql\bin>initdb.exe -U postgres -A pasword -E utf8 -W -D C:\DevTools\postgresql-10.8-1-windows-x64-binaries\data
+initdb: invalid authentication method "pasword" for "local" connections
+
+C:\DevTools\postgresql-10.8-1-windows-x64-binaries\pgsql\bin>initdb.exe -U postgres -A password -E utf8 -W -D C:\DevTools\postgresql-10.8-1-windows-x64-binaries\data
+The files belonging to this database system will be owned by user "shariqparwez".
+This user must also own the server process.
+
+The database cluster will be initialized with locale "English_India.1252".
+The default text search configuration will be set to "english".
+
+Data page checksums are disabled.
+
+Enter new superuser password:password
+Enter it again:password
+
+fixing permissions on existing directory C:/DevTools/postgresql-10.8-1-windows-x64-binaries/data ... ok
+creating subdirectories ... ok
+selecting default max_connections ... 100
+selecting default shared_buffers ... 128MB
+selecting dynamic shared memory implementation ... windows
+creating configuration files ... ok
+running bootstrap script ... ok
+performing post-bootstrap initialization ... ok
+syncing data to disk ... ok
+
+Success. You can now start the database server using:
+
+    pg_ctl -D ^"C^:^\DevTools^\postgresql^-10^.8^-1^-windows^-x64^-binaries^\data^" -l logfile start
+
+
+C:\DevTools\postgresql-10.8-1-windows-x64-binaries\pgsql\bin>

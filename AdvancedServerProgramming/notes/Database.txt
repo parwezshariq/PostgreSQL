@@ -1,0 +1,4 @@
+## Setup Database
+
+PgAdmin > Servers > Postgres10.8 > Databases <Right Click> > 
+	Create > Database > Database: 'shoestore'

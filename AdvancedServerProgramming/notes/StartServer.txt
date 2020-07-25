@@ -1,0 +1,3 @@
+C:\DevTools\postgresql-10.8-1-windows-x64-binaries\pgsql\bin>pg_ctl -D "C:\DevTools\postgresql-10.8-1-windows-x64-binaries\data" -l logfile start
+
+Run PgAdmin 4 from bin folder
